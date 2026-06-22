@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
+  <title>Tab Sleep - Privacy Policy</title>
 
   <style>
     body {
@@ -28,19 +28,26 @@
       text-align: center;
       font-size: 36px;
       margin-bottom: 20px;
-      background: linear-gradient(90deg, #8b5cf6, #6366f1);
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
+    h2 {
+      color: #38bdf8;
+      font-size: 22px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
     p {
-      font-size: 18px;
-      margin-bottom: 20px;
-      color: #cbd5f5;
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #cbd5e1;
     }
 
     .highlight {
-      color: #a78bfa;
+      color: #38bdf8;
       font-weight: bold;
     }
 
@@ -49,51 +56,78 @@
       text-align: center;
       font-size: 14px;
       color: #94a3b8;
+      border-top: 1px solid rgba(148, 163, 184, 0.1);
+      padding-top: 20px;
     }
 
     .card {
       background: rgba(15, 23, 42, 0.6);
-      padding: 20px;
+      padding: 25px;
       border-radius: 12px;
-      margin-bottom: 20px;
-      border: 1px solid rgba(139, 92, 246, 0.2);
+      margin-bottom: 25px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
     }
 
+    ul {
+      padding-left: 20px;
+      color: #cbd5e1;
+      font-size: 16px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <h1>Privacy Policy</h1>
+    <h1>Privacy Policy for Tab Sleep</h1>
 
     <div class="card">
+      <h2>1. Overview</h2>
       <p>
-        This extension <span class="highlight">does not collect, store, or share any personal user data</span>.
+        <span class="highlight">Tab Sleep</span> is committed to protecting user privacy. This extension is designed solely to optimize your browser performance and reduce RAM usage by discarding inactive tabs. We operate under a strict zero-data-collection policy.
       </p>
     </div>
 
     <div class="card">
+      <h2>2. Data Storage & Usage</h2>
       <p>
-        All data (such as schemas and settings) is stored locally on the user's device using Chrome storage and is 
-        <span class="highlight">not transmitted to any external servers</span>.
+        All data generated or used by the extension is processed and <span class="highlight">stored locally on your device</span>. This includes:
+      </p>
+      <ul>
+        <li><strong>Tab Screenshots & States:</strong> Captured temporarily to show the tab preview and maintain scroll position. This data never leaves your browser.</li>
+        <li><strong>User Preferences:</strong> Your customized whitelist of domains.</li>
+        <li><strong>Analytics Data:</strong> Weekly RAM savings statistics shown on your dashboard.</li>
+      </ul>
+      <p>
+        None of this information is transmitted to external servers, third parties, or the developers.
       </p>
     </div>
 
     <div class="card">
-      <p>
-        We do not track users, collect analytics, or share data with third parties.
-      </p>
+      <h2>3. Permissions Explained</h2>
+      <p>To function effectively, Tab Sleep requires the following permissions, used strictly for local operations:</p>
+      <ul>
+        <li><strong>tabs:</strong> To detect inactive tabs, perform the discard action, and restore them upon click.</li>
+        <li><strong>storage:</strong> To save your whitelist preferences and dashboard stats locally.</li>
+        <li><strong>idle:</strong> To safely determine user inactivity before putting tabs to sleep.</li>
+        <li><strong>alarms:</strong> To periodically check for inactive tabs in the background.</li>
+        <li><strong>system.memory:</strong> To calculate and display your RAM savings data.</li>
+      </ul>
     </div>
 
     <div class="card">
+      <h2>4. Changes to This Policy</h2>
       <p>
-        If you have any questions, please contact us.
+        We may update our Privacy Policy from time to time. Any changes will be reflected by updating this page. Your continued use of the extension constitutes acceptance of any updates.
       </p>
     </div>
 
     <div class="footer">
-      © 2026 Schema Designer. All rights reserved.
+      © 2026 Tab Sleep. All rights reserved.
     </div>
   </div>
 
